@@ -1,0 +1,201 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+/* Global Section Layout */
+section {
+    padding: 80px 10%;
+    min-height: 80vh;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home-content h1 span, .home-content h3 span {
+    color: #0077cc;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* Profile Image */
+.home-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Buttons & Socials */
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #0077cc;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Services & Skills Containers */
+.services-container, .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-box, .skill-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.skill-box {
+    padding: 20px;
+    font-weight: bold;
+    background-color: #e6f2ff;
+    color: #0077cc;
+}
+
+/* Timeline/Education */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0077cc;
+}
+
+/* Contact Form */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-text {
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
